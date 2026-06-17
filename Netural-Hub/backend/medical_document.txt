@@ -1,0 +1,36 @@
+Hypertension Management Guidelines:
+Blood pressure target for adults is below 130/80 mmHg.
+First-line treatment includes ACE inhibitors like lisinopril or ARBs like losartan.
+Thiazide diuretics are recommended for older patients.
+Beta blockers are used when heart failure or arrhythmia is present.
+Calcium channel blockers like amlodipine are effective for isolated systolic hypertension.
+Lifestyle changes include low sodium diet less than 2300mg per day.
+Regular aerobic exercise 30 minutes daily reduces blood pressure by 5-8 mmHg.
+DASH diet is highly recommended for hypertensive patients.
+Monitor kidney function and electrolytes regularly when on ACE inhibitors.
+
+Cardiac Arrhythmia Guidelines:
+Early signs include palpitations, dizziness, chest pain, and shortness of breath.
+ECG is the primary diagnostic tool for arrhythmia.
+Atrial fibrillation is the most common sustained arrhythmia.
+Beta blockers and calcium channel blockers are used for rate control.
+Anticoagulation with warfarin or DOACs reduces stroke risk in atrial fibrillation.
+Cardioversion may be required for unstable patients.
+Implantable cardioverter defibrillator is recommended for high risk patients.
+
+Mental Health and Therapy Guidelines:
+Cognitive Behavioral Therapy is first line treatment for depression and anxiety.
+SSRIs like fluoxetine and sertraline are first line pharmacotherapy for depression.
+Therapy sessions should be scheduled weekly for acute cases.
+Sleep hygiene is critical for mental health recovery.
+Mindfulness and meditation reduce anxiety symptoms by 40 percent.
+Exercise releases endorphins and reduces depression symptoms significantly.
+Social support networks improve therapy outcomes by 60 percent.
+
+Medication Interactions:
+Metformin should not be combined with contrast dye without 48 hour washout.
+Warfarin interacts with NSAIDs increasing bleeding risk significantly.
+ACE inhibitors combined with potassium sparing diuretics can cause hyperkalemia.
+Statins combined with fibrates increase risk of rhabdomyolysis.
+Aspirin and clopidogrel combination increases gastrointestinal bleeding risk.
+Avoid grapefruit juice with statins and calcium channel blockers.

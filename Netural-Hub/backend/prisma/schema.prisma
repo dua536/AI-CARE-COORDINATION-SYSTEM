@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-py"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  password  String                          
+  role      String   // doctor, patient, nurse, caregiver, staff
+  createdAt DateTime @default(now())
+}
+
+model Patient {
+  id        String   @id @default(uuid())
+  name      String
+  age       Int
+  condition String
+  gender    String?
+  status    String?  @default("active")
+  phone     String?
+  email     String?
+  notes     String?
+  createdAt DateTime @default(now())
+}
+
+model MedicalRecord {
+  id        String   @id @default(uuid())
+  patientId String
+  notes     String
+  createdAt DateTime @default(now())
+}
+
+model TherapySession {
+  id        String   @id @default(uuid())
+  patientId String
+  summary   String
+  date      DateTime
+}
+
+model AIHistory {
+  id        String   @id @default(uuid())  
+  query     String
+  response  String
+  context   String
+  createdAt DateTime @default(now())
+}
+
+model Document {
+  id        String   @id @default(uuid())  
+  fileName  String
+  content   String
+  createdAt DateTime @default(now())
+}
+
+model Appointment {
+  id          String   @id @default(uuid())
+  patientId   String
+  patientName String
+  type        String
+  date        String
+  time        String
+  notes       String?  @default("")
+  status      String?  @default("pending")
+  createdAt   DateTime @default(now())
+}
