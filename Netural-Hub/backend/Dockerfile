@@ -13,4 +13,4 @@ RUN prisma generate
 
 EXPOSE 8000
 
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD prisma migrate deploy && uvicorn src.main:app --host 0.0.0.0 --port 8000
