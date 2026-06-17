@@ -3,3 +3,8 @@ uvicorn
 prisma
 python-dotenv
 openai
+bcrypt
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+httpx
