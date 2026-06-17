@@ -1,11 +1,22 @@
-FROM python:3.11
+FROM node:18-slim
+
+# Python install karo
+RUN apt-get update && apt-get install -y python3 python3-pip
 
 WORKDIR /app
 
-COPY backend/requirements.txt .
+# Backend copy aur install
+COPY backend/ ./backend/
+RUN pip3 install -r backend/requirements.txt --break-system-packages
 
-RUN pip install --no-cache-dir -r requirements.txt
+# Frontend copy aur install
+COPY frontend/ ./frontend/
+RUN cd frontend && npm install && npm run build
 
-COPY backend .
+# Frontend ki build backend mein daalo
+RUN cp -r frontend/dist ./backend/static
 
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "7860"]
+EXPOSE 7860
+
+# Backend chalaao
+CMD ["python3", "backend/src/main.py"]
